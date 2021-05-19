@@ -3,6 +3,22 @@
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<form><input id="math1n" placeholder="First Number" autocomplete="off"><br><select id="mathoperator"><option>Addition</option><option>Subtraction</option><option>Multiplication</option><option>Division</option></select><br><input id="math2n" placeholder="Second Number" autocomplete="off"><h3 id="mathresult"></h3><button onclick="maths()" type="button">Submit</button></form>
+<div id="topbar">
+    <a id="topbar-item" href="https://checktime.tk">Local Time</a>
+    <a id="topbar-item" href="https://checktime.tk/utc.html">Timezones</a>
+    <a id="topbar-item" href="https://checktime.tk/countdown.html">Countdown</a>
+    <a id="topbar-item-active" href="https://maths.checktime.tk">Maths Calculator</a>
+</div>
+<br>
+<form id="mathsarea"><input id="math1n" placeholder="First Number" type="number" autocomplete="off"><br>
+    <select id="mathoperator">
+        <option>Addition</option>
+        <option>Subtraction</option>
+        <option>Multiplication</option>
+        <option>Division</option>
+    </select><br>
+    <input id="math2n" placeholder="Second Number" type="number" autocomplete="off">
+    <h3 id="mathresult"></h3>
+    <button onclick="maths()" type="button">Submit</button></form>
 </body>
 <script src="main.js"></script>

@@ -13,6 +13,8 @@ function maths() {
         mathr = Math.floor(math1 * math2);
     } else if (mathinputoperator == "Division") {
         mathr = Math.floor(math1 / math2);
+    } else if (mathinputoperator == "Index Laws (Beta)") {
+        mathr = Math.floor(math1 * math2 *2);
     }
     document.getElementById("mathresult").innerHTML = mathr;
 }
